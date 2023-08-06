@@ -1,0 +1,75 @@
+.page
+{
+ display: flex;
+ flex-wrap: wrap;   
+}
+
+.header
+{
+    background: url("../more-news-bg.jpg") top center no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.headerContainer {
+    min-height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoAndTitle
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.title
+{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.body
+{
+    height: 1000px;
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    background-color: wheat;
+}
+
+@media (min-width: 750px)
+{
+    .headerContainer 
+    {
+        min-height: 140px;
+    }
+
+    .header
+    {
+        background: url("../more-news-bg.jpg") top center no-repeat;
+    }
+
+    .title
+    {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 400px)
+{
+    .header
+    {
+        background: url("../more-news-bg.jpg") top center no-repeat;
+    }
+    
+}

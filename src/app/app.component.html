@@ -1,0 +1,30 @@
+<div class="page">
+  <div class="header">
+    <div class="headerContainer">
+      <div class="logoAndTitle">
+        <div class="logo">
+            <img src="https://cdn4.iconfinder.com/data/icons/nationalities-new-collection/383/indian_sikh-512.png" alt="" height="70px" width="70px">
+        </div>
+        <div class="title">
+            <h1>How many indians you are worth?</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div style="margin-top: 250px">
+      <div style="display: flex; justify-content: space-between;">
+        <div style="margin-right: 5px;">
+          <h4>What is your salary? </h4>
+        </div>
+        <div>
+          <p-inputNumber name="value" [(ngModel)]="value" inputId="currency-israel" mode="currency" currency="ISR" locale="en-US"> </p-inputNumber>
+        </div>
+        <div>
+          <p-button label="Submit" [loading]="loading" (onClick)="loadAndShow()"></p-button>
+        </div>
+      </div>
+      {{result}}
+    </div>
+  </div>
+</div>
